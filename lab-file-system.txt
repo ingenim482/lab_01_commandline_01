@@ -31,7 +31,7 @@ If it doesn't start at #1 again, or ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
-
+/Users/jeffreyingenito/mtec1002
 
 
 ==========
@@ -42,7 +42,8 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+Jeffreys-iMac:mtec1002 jeffreyingenito$ ls
+animals
 
 
 ==========
@@ -53,7 +54,7 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+animals	food
 
 
 ==========
@@ -64,6 +65,9 @@ $ ls
 
 Copy and paste the output below.
 ----------
+Jeffreys-iMac:mtec1002 jeffreyingenito$ mkdir -p foo/bar/baz/qux
+Jeffreys-iMac:mtec1002 jeffreyingenito$ ls
+animals	foo	food
 
 
 
@@ -75,7 +79,10 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+Jeffreys-iMac:mtec1002 jeffreyingenito$ cd foo/bar/baz/qux
+Jeffreys-iMac:qux jeffreyingenito$ pwd
+/Users/jeffreyingenito/mtec1002/foo/bar/baz/qux
+Jeffreys-iMac:qux jeffreyingenito$ 
 
 
 ==========
@@ -87,7 +94,10 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
+Jeffreys-iMac:qux jeffreyingenito$ cd ../..
+Jeffreys-iMac:bar jeffreyingenito$ pwd
+/Users/jeffreyingenito/mtec1002/foo/bar
+Jeffreys-iMac:bar jeffreyingenito$ 
 
 ==========
 10. Type:
@@ -97,7 +107,11 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+Jeffreys-iMac:bar jeffreyingenito$ cd -
+/Users/jeffreyingenito/mtec1002/foo/bar/baz/qux
+Jeffreys-iMac:qux jeffreyingenito$ pwd
+/Users/jeffreyingenito/mtec1002/foo/bar/baz/qux
+Jeffreys-iMac:qux jeffreyingenito$ 
 
  
 ==========
@@ -108,7 +122,8 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+eys-iMac:qux jeffreyingenito$ cd ../../../..
+Jeffreys-iMac:mtec1002 jeffreyingenito$ 
 
 
 ==========
@@ -121,6 +136,8 @@ $ ls -l
 Copy and paste the first two lines from the output into the space below.
 ----------
 
+drwxr-xr-x  3 jeffreyingenito  staff  102 Sep  2 23:22 foo
+drwxr-xr-x  2 jeffreyingenito  staff   68 Sep  2 23:19 food
 
 
 ==========
@@ -131,7 +148,7 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/Users/jeffreyingenito
 
 
 ==========
@@ -142,7 +159,8 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+Jeffreys-iMac:Volumes jeffreyingenito$ pwd
+/Volumes
 
 
 ==========
@@ -154,7 +172,9 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+-bash: cd: /unknown: No such file or directory
+Jeffreys-iMac:Volumes jeffreyingenito$ pwd
+/Volumes
 
 ==========
 15. Type:
@@ -165,7 +185,7 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+/Users/jeffreyingenito/mtec1002
 
 ==========
 16. Type:
@@ -174,14 +194,13 @@ $ hostname
 
 Copy and paste the output into the space below.
 ----------
-
-
+Jeffreys-iMac.home
 
 ==========
 17a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
-
+pwd
 
 ==========
 17b. If you're not in the right directory, type the following command:
@@ -203,7 +222,7 @@ lemon
 
 Use only one command to make all of these new directories.  Write what command you used below:
 ----------
-
+$ mkdir -p pineapple/orange/strawberry/lemon
 
 
 ==========
@@ -211,7 +230,7 @@ Use only one command to make all of these new directories.  Write what command y
 
 Write the command you used to create the directory below:
 ----------
-
+$mkdir aardvark
 
 
 ==========
@@ -219,7 +238,7 @@ Write the command you used to create the directory below:
 
 What is the modified date of the aardvark directory?
 ----------
-
+drwxr-xr-x  2 jeffreyingenito  staff   68 Sep  2 23:33 aardvark
 
 
 ==========
@@ -231,7 +250,7 @@ What is the modified date of the aardvark directory?
 
 What command did you use?
 ----------
-
+$ mkdir -p foo/bar/baz
 
 
 ==========
@@ -239,7 +258,7 @@ What command did you use?
 
 What command did you use?
 ----------
-
+cd /foo/bar/baz
 
 
 ==========
@@ -247,44 +266,45 @@ What command did you use?
 
 What command did you use?
 ----------
-
+cd ../..
 
 ==========
 24. What command is used to delete empty directories?
 ----------
 
-
+rmdir
 
 ==========
 25. What command is used to print out your current working directory?
 ----------
 
-
+pwd
 
 ==========
 26. What flag do I pass to ls to print out all files?
 ----------
-
+ls -a
 
 
 ==========
 27. What's the shortcut for home directory?
 ----------
 
-
+cd ~
 
 ==========
 28. What's a pathname?
 ----------
-
+A pathname is the general form of the name of a file or directory; it specifies a unique location in a file system.
 
 
 ==========
 29. What's a directory?
 ----------
-
+a directory is a cataloging structure on a file system that references other files (and directories)
 
 
 ==========
 30. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+cd/Users/username/Downloads
